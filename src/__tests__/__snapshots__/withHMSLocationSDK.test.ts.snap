@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app build.gradle modifications adds hms implementation to dependencies 1`] = `
+"apply plugin: "com.facebook.react"
+
+android {
+}
+
+dependencies {
+    // @generated begin @armanatz/expo-hms-location-implementation - expo prebuild (DO NOT MODIFY) sync-8eee6c6552e2dedbd04423ac3fcff0d218ec93bb
+    implementation("com.huawei.hms:location:6.12.0.300")
+    // @generated end @armanatz/expo-hms-location-implementation
+}"
+`;
+
+exports[`app build.gradle modifications applies agcp plugin 1`] = `
+"apply plugin: "com.facebook.react"
+// @generated begin @armanatz/expo-hms-location-agconnect - expo prebuild (DO NOT MODIFY) sync-1c63e1459bc83532e84404ddae98c345ce2ce150
+apply plugin: "com.huawei.agconnect"
+// @generated end @armanatz/expo-hms-location-agconnect
+
+android {
+}
+
+dependencies {
+}"
+`;
+
+exports[`app build.gradle modifications applies bouncy castle resolution fix 1`] = `
+"apply plugin: "com.facebook.react"
+
+android {
+    // @generated begin @armanatz/expo-hms-location-bouncycastle-fix - expo prebuild (DO NOT MODIFY) sync-59c55b2624e7cca5387fdb71180ab76058a62315
+    configurations.all {
+        c -> c.resolutionStrategy.eachDependency {
+            DependencyResolveDetails dependency ->
+                if (dependency.requested.group == 'org.bouncycastle') {
+                    dependency.useTarget 'org.bouncycastle:bcprov-jdk15to18:1.70'
+                }
+        }
+    }
+    // @generated end @armanatz/expo-hms-location-bouncycastle-fix
+}
+
+dependencies {
+}"
+`;

@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`project build.gradle modifications adds agcp plugin to buildscript dependencies 1`] = `
+"buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        // @generated begin @armanatz/expo-hms-location-agconnect - expo prebuild (DO NOT MODIFY) sync-854ce4f5ef964a021eefccc1c88cdde6e9fad117
+        classpath('com.huawei.agconnect:agcp:1.9.1.301')
+        // @generated end @armanatz/expo-hms-location-agconnect
+        classpath('com.android.tools.build:gradle')
+    }
+}
+"
+`;
+
+exports[`project build.gradle modifications adds huawei maven repo to buildscript 1`] = `
+"buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        // @generated begin @armanatz/expo-hms-location-maven-buildscript - expo prebuild (DO NOT MODIFY) sync-b660f0736d1147334376fd8aa31eb80c855d4be0
+        maven { url 'https://developer.huawei.com/repo/' }
+        // @generated end @armanatz/expo-hms-location-maven-buildscript
+    }
+    dependencies {
+        classpath('com.android.tools.build:gradle')
+    }
+}
+"
+`;
+
+exports[`project build.gradle modifications creates new allprojects and adds huaewi maven repo to it 1`] = `
+"buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath('com.android.tools.build:gradle')
+    }
+}
+// @generated begin @armanatz/expo-hms-location-maven-allprojects - expo prebuild (DO NOT MODIFY) sync-87a1e6ffa6f51bf342280163ff2b9ae2d4ed71d6
+allprojects {
+    repositories {
+        maven { url 'https://developer.huawei.com/repo/' }
+    }
+}
+// @generated end @armanatz/expo-hms-location-maven-allprojects"
+`;
+
+exports[`project build.gradle modifications pins android gradle build tools version 1`] = `
+"buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        // @generated begin @armanatz/expo-hms-location-buildscript-buildtools - expo prebuild (DO NOT MODIFY) sync-e1eab30c134a714f0755d42f4bb3bbe976d48d57
+        classpath('com.android.tools.build:gradle:8.6.0')
+        // @generated end @armanatz/expo-hms-location-buildscript-buildtools
+    }
+}
+"
+`;

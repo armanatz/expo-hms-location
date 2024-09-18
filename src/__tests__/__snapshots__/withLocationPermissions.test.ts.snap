@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expo config android.permissions modifications adds background location permissions 1`] = `
+{
+  "android": {
+    "permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+      "android.permission.ACCESS_BACKGROUND_LOCATION",
+    ],
+  },
+  "mods": {
+    "android": {
+      "manifest": [Function],
+    },
+  },
+  "name": "testproject",
+  "platforms": [
+    "ios",
+    "android",
+  ],
+  "slug": "testproject",
+  "version": "1",
+}
+`;
+
+exports[`expo config android.permissions modifications adds location permissions 1`] = `
+{
+  "android": {
+    "permissions": [
+      "android.permission.ACCESS_COARSE_LOCATION",
+      "android.permission.ACCESS_FINE_LOCATION",
+    ],
+  },
+  "mods": {
+    "android": {
+      "manifest": [Function],
+    },
+  },
+  "name": "testproject",
+  "platforms": [
+    "ios",
+    "android",
+  ],
+  "slug": "testproject",
+  "version": "1",
+}
+`;
