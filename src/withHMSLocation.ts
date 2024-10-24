@@ -23,15 +23,16 @@ function withHMSLocation(
     enableBouncyCastleFix,
   } = options;
 
-  if (!agConnectServicesFile) {
-    throw new Error(
-      'withHMSLocationAndroid: You must provide the path to your agconnect-services.json file',
+  if (agConnectServicesFile) {
+    config = withAGConnectServicesFile(config, agConnectServicesFile);
+    config = withManifestAppId(config, agConnectServicesFile);
+  } else {
+    console.error(
+      '!! withHMSLocationAndroid: agConnectServicesFile is not provided. Ignore this message if you see it while running expo-doctor. Otherwise, please provide the path to your agconnect-services.json file !!',
     );
   }
 
-  config = withAGConnectServicesFile(config, agConnectServicesFile);
   config = withLocationPermissions(config, isBackgroundLocationEnabled);
-  config = withManifestAppId(config, agConnectServicesFile);
   config = withMavenRepo(config);
   config = withHMSLocationSDK(config, enableBouncyCastleFix);
 
