@@ -1,3 +1,7 @@
+## @armanatz/expo-hms-location 1.0.3 (2025-01-07)
+
+Bump NPM version
+
 ## @armanatz/expo-hms-location 1.0.2 (2025-01-07)
 
 Upgrade package dependencies to support Expo SDK versions greater than 51
