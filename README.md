@@ -8,7 +8,9 @@ inside an Expo application that uses Continuous Native Generation.
 This plugin is currently only for Android and there are no plans to add iOS support at
 the moment. I am open to PRs however so feel free to create one if you need iOS support.
 
-This plugin was written and tested against Expo SDK 51.
+This plugin was written and tested against Expo SDK 51. It should work with later versions
+of Expo unless they change something internally. If it doesn't work for versions past 51,
+leave an issue and I will look into it.
 
 It goes without saying but this plugin cannot be used in an "Expo Go" app as it requires
 custom native code.

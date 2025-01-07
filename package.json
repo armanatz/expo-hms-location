@@ -1,6 +1,6 @@
 {
   "name": "@armanatz/expo-hms-location",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Expo config plugin to configure @hmscore/react-native-hms-location on prebuild",
   "main": "build/withHMSLocation.js",
   "types": "build/withHMSLocation.d.ts",
@@ -32,12 +32,12 @@
     "react-native-hms-location"
   ],
   "devDependencies": {
-    "expo": "^51",
+    "expo": ">=51",
     "expo-module-scripts": "^3.5.1",
     "memfs": "^4.11.2"
   },
   "peerDependencies": {
-    "expo": "^51"
+    "expo": ">=51"
   },
   "peerDependenciesMeta": {
     "expo": {
